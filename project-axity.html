@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Metzli Rauda - Axity </title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      scroll-behavior: smooth;
+    }
+
+    section {
+      /*height: 100vh;*/
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.5rem;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    /* Colores únicos */
+    #sec1 { background-color: #ffffff; color: black; }
+    #sec2 { background-color: #fedbe5; color: black; }
+    #sec3 { background-color: #ffffff; color: black; }
+    #sec4 { background-color: #fedbe5; color: black; }
+    #sec5 { background-color: #ffffff; color: black; }
+    #sec6 { background-color: #fedbe5; color: black; }
+    #sec7 { background-color: #ffffff; color: black; }
+    #sec8 { background-color: #fedbe5; color: black; }
+    #sec9 { background-color: #ffffff; color: black; }
+    #sec10 { background-color: #fedbe5; color: black; }
+    #sec11 { background-color: #ffffff; color: black; }
+    #sec12 { background-color: #fedbe5; color: black; }   
+  
+
+    /* Wipe */
+    .wipe::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #e0edec;
+      opacity: 3;
+      top: -100%;
+      left: 0;
+      z-index: 1;
+      transition: top 1s ease-in-out;
+    }
+
+    .wipe.revealed::before {
+      top: 100%;
+    }
+
+    /* Contenido general */
+    .wipe-content {
+      position: relative;
+      z-index: 2;
+      opacity: 0;
+      transform: translateX(-100px);
+      transition: opacity 1.2s ease-in-out 0.5s, transform 1s ease-in-out 0.5s;
+    }
+
+    .wipe.revealed .wipe-content {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* Fade específico para h1 */
+    h3 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      opacity: 0;
+      transform: translateX(100px); /* Viene desde la derecha */
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    h3.revealed {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .wipe.revealed h3 {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+
+</head>
+
+<body class="gallery-single-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename"><img src="assets/img/logo.png" class="img-fluid" alt=""></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Inicio<br></a></li>
+          <li><a href="about.html">Sobre mí</a></li>
+          <li><a href="portfolio.html" class="active"><span>Portafolio</span></a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Gallery Details Section -->
+    <div id="gallery-details" class="gallery-details section">
+
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/Axity/1-slider-project-axity.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/Axity/2-slider-project-axity.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/Axity/3-slider-project-axity.png" alt="">
+            </div>
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    </div><!-- /Gallery Details Section -->
+
+    <section id="sec1" class="wipe">
+      <div class="container wipe-content">
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-up">
+            <img class="introduction-image" src="assets/img/portfolio/Common/1-Introduction-2.png" alt="">
+          </div>
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <h4 class="title-portfolio">Introducción al proyecto</h4>
+              <p class="body-text-portfolio ">
+                Durante mi participación en el equipo de AMS (Application Management Services) en Axtiy, identifiqué junto al equipo una problemática crítica: la operación dependía fuertemente del conocimiento tácito de consultores Senior, los tiempos de resolución eran largos y no existía una base de conocimiento efectiva para documentar y reutilizar soluciones.
+              </p>
+              <p class="body-text-portfolio ">
+                A partir de esto, lideré el diseño del Asistente Cognitivo, una herramienta basada en inteligencia artificial que permite a los consultores Junior resolver incidentes de manera más autónoma, al mismo tiempo que estandariza la documentación, automatiza procesos clave y reduce la carga operativa de los perfiles más experimentados. 
+              </p>
+              <p class="quote-portfolio">
+                Este proyecto no solo buscó mejorar la eficiencia interna, sino también fortalecer la competitividad del servicio y mejorar la experiencia de los usuarios finales.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec2" class="wipe">
+      <div class="container wipe-content">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info">
+              <h4 class="title-portfolio">Información del proyecto</h4>
+              <div class="row">
+                <div class="col-lg-4">
+                  <ul class="project-information">
+                    <li><strong>Cliente</strong> Iniciativa interna Axity</li>
+                    <li><strong>Tipo de proyecto</strong> Web</li>
+                    <li><strong>Sector</strong> IA | Servicios </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4">
+                  <ul class="project-information">
+                    <li><strong>Rol</strong> UX / UI Designer</li>
+                    <li><strong>Herramientas</strong> Figma</li>
+                    <li><strong>Fecha y duración</strong> Noviembre 2024 - Abril 2025 </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4">
+                  <ul class="project-information">
+                    <li><strong>Equipo</strong> 1 Diseñador | 1 SM | 8 desarrolladores | 1 QA</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up">
+            <img class="introduction-image" src="assets/img/portfolio/Common/2-Information-2.png" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="sec3" class="wipe">
+      <div class="container wipe-content">
+        <h4 class="title-portfolio">Mi papel e impacto</h4>
+        <div class="row my-role">
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="my-role-image float-start" src="assets/img/portfolio/Common/3-IconReserch.png" alt="">
+          </div>
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <p class="title-2-portfolio">
+                Investigación
+              </p>
+              <p class="body-text-portfolio ">
+                Realicé entrevistas semi-estructuradas con consultores de distintos niveles, líderes de AMS y Key Users. Analicé los hallazgos mediante codificación abierta y axial, lo que me permitió detectar patrones, frustraciones y necesidades ocultas. Esto fue fundamental para definir el rumbo estratégico del producto y asegurar que cada solución respondiera a un problema real.
+              </p>
+              <p class="quote-portfolio">
+                <strong>Impacto:</strong>  Identifiqué barreras críticas de adopción y oportunidades claras para el diseño del sistema.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row my-role mb-5">
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="my-role-image float-start" src="assets/img/portfolio/Common/3-IconDesign.png" alt="">
+          </div>
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <p class="title-2-portfolio">
+                Diseño
+              </p>
+              <p class="body-text-portfolio ">
+                A partir de los insights, diseñé la arquitectura de información de la base de conocimiento, priorizando la búsqueda eficiente, los filtros inteligentes y la integración con sistemas existentes como ITSM y SAP. Propuse también la implementación de un chatbot interno, flujos de documentación automática y materiales visuales para onboarding y capacitación continua.
+              </p>
+              <p class="quote-portfolio">
+                <strong>Impacto:</strong> Aceleré el acceso a soluciones previas y reduje tiempos de resolución en escenarios tipo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row my-role">
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="my-role-image float-start" src="assets/img/portfolio/Common/3-IconComunication.png" alt="">
+          </div>
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <p class="title-2-portfolio">
+                Comunicación
+              </p>
+              <p class="body-text-portfolio ">
+                Uno de los retos más grandes fue la resistencia al cambio. Me enfoqué en diseñar no solo una herramienta útil, sino una experiencia que generara confianza entre los distintos perfiles. Propuse estrategias como programas de mentoría, reconocimiento a quienes compartieran conocimiento y una estructura clara de gobernanza para mantener actualizada la base. Mi objetivo fue que cada rol encontrara valor tangible en la herramienta desde el primer uso.
+              </p>
+              <p class="quote-portfolio">
+                <strong>Impacto:</strong> Disminuí la resistencia interna e impulsé el uso sostenido de la herramienta.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec4" class="wipe">
+      <div class="container wipe-content">
+        <div class="row">
+          <h4 class="title-portfolio">Problema</h4>
+          <div class="col-lg-6 padding-nule" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <h4 class="subtitle-portfolio">La operación del equipo AMS presenta una alta dependencia del conocimiento tácito de los consultores Senior</h4>
+              <p class="body-text-portfolio ">
+                El equipo AMS enfrentaba una fuerte dependencia del conocimiento individual de los consultores Senior, lo que provocaba tiempos de resolución prolongados, retrabajo constante y pérdida de información valiosa. No existía una base de conocimiento centralizada ni procesos claros para documentar, lo que limitaba la autonomía de los consultores Junior y afectaba tanto la productividad interna como la experiencia del cliente.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up">
+            <img class="introduction-image" src="assets/img/portfolio/Common//4-Problem-2.png" alt="">
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-4 padding-nule" data-aos="fade-up" data-aos-delay="100">
+            <div class="problem-section">
+              <h4 class="subtitle-portfolio">50% del tiempo </h4>
+              <p class="body-text-portfolio "> 
+                de los consultores se destinaba a la <strong>tareas manuales de documentación o búsqueda de soluciones previas.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 padding-nule" data-aos="fade-up" data-aos-delay="100">
+            <div class="problem-section">
+              <h4 class="subtitle-portfolio">70% de los consultores Junior  </h4>
+              <p class="body-text-portfolio">
+                declararon tener dificultades para encontrar información útil o reutilizable en los casos cotidianos.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 padding-nule" data-aos="fade-up" data-aos-delay="100">
+            <div class="problem-section">
+              <h4 class="subtitle-portfolio">0% de documentación</h4>
+              <p class="body-text-portfolio ">
+                <strong>actualizada en algunas bases internas,</strong> lo que obligaba a buscar soluciones en correos, Word o colegas.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="sec5" class="wipe">
+      <div class="container wipe-content">
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <h4 class="title-portfolio">Metodologías</h4>
+            <h4 class="subtitle-portfolio">Agile UX y Design Thinking</h4>
+            <img class="methodology-image" src="assets/img/portfolio/Common/5-DesignThinking.png" alt="">
+            <p class="body-text-portfolio">
+              Durante el desarrollo del Asistente Cognitivo, combiné los principios de Design Thinking con el enfoque iterativo de Agile UX para diseñar una solución centrada en usuarios reales, pero alineada con los objetivos del negocio y los tiempos de entrega del equipo técnico.
+            </p>
+            <div class="body-list-portfolio">
+                <ul>
+                  <li>Colaboré directamente con equipos de desarrollo (frontend/backend) y Scrum Master durante ciclos quincenales.</li>
+                  <li>Preparé entregables “just in time” para cada sprint, alineando el diseño con el backlog y ajustando en función de nuevas prioridades técnicas.</li>
+                  <li>Participé en dailies, refinamientos y retrospectivas para asegurar coherencia entre visión de usuario y ejecución técnica.</li>
+                  <li>Priorizamos diseño funcional y validación continua sobre la perfección visual temprana.</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec6" class="wipe">
+      <div class="container wipe-content">
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <h4 class="title-challenge">Desafío</h4>
+            <p class="body-text-challenge2">
+              Transformar un entorno de soporte técnico altamente dependiente del conocimiento individual y procesos manuales, en un sistema colaborativo, automatizado y sostenible mediante una base de conocimiento inteligente, capaz de empoderar a consultores Junior, reducir la carga de los perfiles Senior y mejorar significativamente los tiempos de respuesta sin comprometer la calidad del servicio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec7" class="wipe">
+      <div class="container wipe-content">
+        <h4 class="title-portfolio">Empatizar</h4>
+        <div class="row empathize">
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="empathize-image float-start" src="assets/img/portfolio/Common/6-empathize.png" alt="">
+          </div>
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <p class="subtitle-portfolio ">
+                Todo comenzó con una pregunta incómoda
+              </p>
+              <p class="quote-portfolio">
+                <strong>Insight clave:</strong> ¿Por qué seguimos resolviendo los mismos problemas una y otra vez?
+              </p>
+              <p class="body-text-portfolio ">
+              En Axtiy, dentro del equipo de AMS, los consultores pasaban horas buscando soluciones que alguien más ya había documentado... en algún Word olvidado, en un correo sin asunto o, peor aún, solo en la cabeza de un Senior.
+              </p>
+              <p class="body-text-portfolio ">
+                Los Juniors no sabían por dónde empezar, los Seniors estaban saturados, y los líderes apenas lograban reportes hechos a mano para justificar SLA. El conocimiento existía, pero no fluía.
+              </p>
+              <p class="body-text-portfolio ">
+                Así que decidí ir más allá de los síntomas y hablar directamente con quienes vivían el caos. Entrevisté a consultores de todos los niveles, Key Users y líderes operativos. Con cada historia, surgía un patrón claro: teníamos un sistema roto, sostenido por la experiencia individual y mucho esfuerzo invisible.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row empathize">
+          <div class="col-lg-12" data-aos="fade-up">
+            <img class="empathize-artifact float-start" src="assets/img/portfolio/Axity/Empatizar-resumen.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec8" class="wipe">
+      <div class="container wipe-content">
+        <h4 class="title-portfolio">Definir</h4>
+        <div class="row define">
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <p class="subtitle-portfolio ">
+                No era solo falta de documentación, era una cultura estancada
+              </p>
+              <p class="quote-portfolio">
+                “Sabemos qué hacer, pero no sabemos cómo explicarlo ni dónde dejarlo para el siguiente.”
+              </p>
+              <p class="body-text-portfolio ">
+                Sintetizando los hallazgos, identifiqué un problema de raíz:
+                <div class="body-list-portfolio">
+                <ul>
+                  <li>
+                    La falta de una base de conocimiento centralizada y gobernada limitaba la autonomía, generaba retrabajo y convertía la experiencia de los Seniors en un cuello de botella.
+                  </li>
+                  <li>
+                    Esto no solo impactaba la productividad. También afectaba la motivación y frustraba a quienes querían aprender o contribuir más. Era momento de rediseñar no solo una herramienta, sino una nueva forma de compartir conocimiento.
+                  </li>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="define-image float-start" src="assets/img/portfolio/Common/7-define.png" alt="">
+          </div>
+        </div>
+        <div class="row define">
+          <div class="col-lg-12" data-aos="fade-up">
+            <img class="define-artifact float-start" src="assets/img/portfolio/Axity/Definir-EmpathyMap.png" alt="">
+          </div>
+        </div>
+        <div class="row define">
+          <div class="col-lg-12" data-aos="fade-up">
+            <img class="define-artifact float-start" src="assets/img/portfolio/Axity/Definir-JourneyMap.png" alt="">
+          </div>
+        </div>
+        <div class="row define">
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="introduction-project">
+              <p class="subtitle-portfolio ">
+                Frustraciones
+              </p>
+              <p class="body-text-portfolio ">
+                Todos los roles:
+                <div class="body-list-portfolio">
+                <ul>
+                  <li>Re-trabajo y pérdida de tiempo por falta de documentación útil.</li>
+                  <li>Herramientas poco intuitivas o mal adaptadas.</li>
+                  <li>Fragmentación del conocimiento.</li>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="introduction-project">
+              <p class="subtitle-portfolio ">
+                Insights Estratégicos Comunes
+              </p>
+              <p class="body-text-portfolio ">
+                <div class="body-list-portfolio">
+                <ul>
+                  <li>El conocimiento existe, pero está disperso e informalizado.</li>
+                  <li>Los roles tienen voluntad de colaborar, pero carecen de infraestructura.</li>
+                  <li>La dependencia entre roles es alta y genera fricción operativa.</li>
+                  <li>El sistema necesita evolucionar hacia una red de conocimiento vivo, colaborativo y curado.</li>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec9" class="wipe">
+      <div class="container wipe-content">
+        <h4 class="title-portfolio">Idear</h4>
+        <div class="row ideate">
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="ideate-image float-start" src="assets/img/portfolio/Common/9-ideate.png" alt="">
+          </div>
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <p class="subtitle-portfolio ">
+                El futuro tenía que ser inteligente, colaborativo y simple
+              </p>
+              <p class="quote-portfolio">
+                ¿Y si la base de conocimiento tuviera memoria, hablara y te avisara antes de que todo se queme?
+              </p>
+              <p class="body-text-portfolio ">
+                A partir de las necesidades identificadas, diseñé junto al equipo una solución con estos ejes:
+              </p>
+              <div class="body-list-portfolio">
+                <ul>
+                  <li>Búsqueda por palabras clave, chatbot conversacional y filtros inteligentes.</li>
+                  <li>Arquitectura de información por módulos funcionales, errores frecuentes y procesos.</li>
+                  <li>Automatización de documentación desde tickets resueltos.</li>
+                  <li>Material visual para onboarding, manuales didácticos y flujos de escalamiento claros.</li>
+                </ul>
+              </div>
+              <p class="body-text-portfolio">
+                No diseñamos una wiki. Diseñamos un asistente cognitivo que aprende, guía y ayuda sin estorbar.
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="row ideate">
+          <div class="col-lg-12" data-aos="fade-up">
+            <img class="empathize-artifact float-start" src="assets/img/portfolio/Axity/Idear-UserFlow.png" alt="">
+          </div>
+          <div class="col-lg-12" data-aos="fade-up">
+            <img class="empathize-artifact float-start" src="assets/img/portfolio/Axity/Idear-Conclusion.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec10" class="wipe">
+      <div class="container wipe-content">
+        <h4 class="title-portfolio">Prototipar</h4>
+        <div class="row prototype">
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <p class="subtitle-portfolio ">
+                De insight a interfaz
+              </p>
+              <p class="quote-portfolio">
+                “No quiero una biblioteca, quiero algo que piense conmigo.”
+              </p>
+              <p class="body-text-portfolio">
+                Diseñé flujos interactivos en Figma, centrados en el día a día de los usuarios: desde la búsqueda de soluciones, hasta la documentación de nuevos casos.
+              </p>
+              <p class="body-text-portfolio">
+                Integramos elementos clave como etiquetas contextuales, sugerencias automáticas y visualización de procesos. Todo probado con usuarios reales antes de ir a desarrollo.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="prototype-image float-start" src="assets/img/portfolio/Common/10-prototype.png" alt="">
+          </div>
+        </div>
+        <div class="row prototype">
+          <div class="col-lg-12" data-aos="fade-up">
+            <img class="prototype-artifact float-start" src="assets/img/portfolio/Axity/prototipado-mockups.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec11" class="wipe">
+      <div class="container wipe-content">
+        <h4 class="title-portfolio">Probar</h4>
+        <div class="row test">
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="test-image float-start" src="assets/img/portfolio/Common/11-test.png" alt="">
+          </div>
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <p class="subtitle-portfolio ">
+                Lo validamos con quienes antes solo tenían frustraciones
+              </p>
+              <div class="body-list-portfolio">
+                <ul>
+                  <li>4 consultores Junior</li>
+                  <li>3 consultores Senior</li>
+                  <li>2 líderes AMS</li>
+                </ul>
+              </div>
+              <p class="quote-portfolio">
+                “Por fin sé dónde buscar antes de preguntar.” — Consultor Junior 
+                <br>
+                “Esto sí nos quita trabajo repetitivo.” — Consultor Senior
+              </p>
+              <p class="body-text-portfolio ">
+                Durante las pruebas, los Juniors encontraron más rápido lo que antes tardaban en buscar o preguntar.
+              </p>
+              <p class="subtitle-portfolio-2">
+                Punto a mejorar
+              </p>
+              <p class="body-text-portfolio ">
+                Algunos usuarios tuvieron dificultad para entender los filtros del buscador.
+                <br> 
+                <strong>Recomendación:</strong> rediseñar etiquetas y agregar ejemplos rápidos en el primer uso.
+              </p>             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec12" class="wipe">
+      <div class="container wipe-content">
+        <h4 class="title-portfolio">Resultados e impacto</h4>
+        <div class="row results">
+
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="methodology-image" src="assets/img/portfolio/Common/12-results-6.png" alt="">
+            <p class="subtitle-results"> -50%</p>
+            <p class="body-text-results">
+              en tiempos de resolución.
+            </p>
+          </div>
+
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="methodology-image" src="assets/img/portfolio/Common/12-results-2.png" alt="">
+            <p class="subtitle-results"> -30%</p>
+            <p class="body-text-results">
+              en escalamientos a Seniors.
+            </p>
+          </div>
+
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="methodology-image" src="assets/img/portfolio/Common/12-results-3.png" alt="">
+            <p class="subtitle-results"> +60%</p>
+            <p class="body-text-results">
+              uso de la base de conocimiento.
+            </p>
+          </div>
+
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="methodology-image" src="assets/img/portfolio/Common/12-results-1.png" alt="">
+            <p class="subtitle-results"> -25%</p>
+            <p class="body-text-results">
+              en tiempo de documentación.
+            </p>
+          </div>
+
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="methodology-image" src="assets/img/portfolio/Common/12-results-8.png" alt="">
+            <p class="subtitle-results"> +35%</p>
+            <p class="body-text-results">
+              satisfacción del Key User.
+            </p>
+          </div>
+
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="methodology-image" src="assets/img/portfolio/Common/12-results-7.png" alt="">
+            <p class="subtitle-results"> 100%</p>
+            <p class="body-text-results">
+              de casos con trazabilidad.
+            </p>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-lg-12 mt-5" data-aos="fade-up">
+            <p class="subtitle-portfolio "> 
+              Reflexión final
+            </p>
+            <p class="body-text-portfolio">
+              Transformamos un sistema saturado en un entorno más eficiente, colaborativo y escalable. El diseño no solo resolvió un problema técnico, sino que facilitó un cambio cultural en cómo el equipo AMS gestiona, comparte y reutiliza su conocimiento.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+      <!-- Secciones -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="info-wrap mt-2" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="info-item d-flex align-items-center">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Correo electrónico</h3>
+                <p>raudamet@gmail.com </p>
+              </div>
+            </div>
+          </div><!-- End Info Item --> 
+  
+          <div class="col-lg-4">
+            <div class="info-item d-flex align-items-center">
+              <i class="bi bi-behance flex-shrink-0"></i>
+              <div>
+                <h3>Behance</h3>
+                <ins>
+                  <a href="https://www.behance.net/MetzliRauda" target="_blank"><p>/MetzliRauda</p></a>
+                </ins>
+              </div>
+            </div>
+          </div><!-- End Info Item --> 
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex align-items-center">
+              <i class="bi bi-linkedin flex-shrink-0"></i>
+              <div>
+                <h3>Linkedin</h3>
+                <ins>                
+                  <a href="https://www.linkedin.com/in/metzlirauda/" target="_blank"><p>/metzlirauda</p></a>
+                </ins>
+              </div>
+            </div>
+          </div><!-- End Info Item -->   
+        </div>
+      </div>
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Metzli Rauda</strong>2025 <span>Todos los derechos reservados </span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- JS scroll trigger -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.wipe').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+
+</html>
