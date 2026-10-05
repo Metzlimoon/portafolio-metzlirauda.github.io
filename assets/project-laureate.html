@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Metzli Rauda - Laureate </title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      scroll-behavior: smooth;
+    }
+
+    section {
+      /*height: 100vh;*/
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.5rem;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    /* Colores únicos */
+    #sec1 { background-color: #ffffff; color: black; }
+    #sec2 { background-color: #fedbe5; color: black; }
+    #sec3 { background-color: #ffffff; color: black; }
+    #sec4 { background-color: #fedbe5; color: black; }
+    #sec5 { background-color: #ffffff; color: black; }
+    #sec6 { background-color: #fedbe5; color: black; }
+    #sec7 { background-color: #ffffff; color: black; }
+    #sec8 { background-color: #fedbe5; color: black; }
+    #sec9 { background-color: #ffffff; color: black; }
+    #sec10 { background-color: #fedbe5; color: black; }
+    #sec11 { background-color: #ffffff; color: black; }
+    #sec12 { background-color: #fedbe5; color: black; }   
+  
+
+    /* Wipe */
+    .wipe::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #e0edec;
+      opacity: 3;
+      top: -100%;
+      left: 0;
+      z-index: 1;
+      transition: top 1s ease-in-out;
+    }
+
+    .wipe.revealed::before {
+      top: 100%;
+    }
+
+    /* Contenido general */
+    .wipe-content {
+      position: relative;
+      z-index: 2;
+      opacity: 0;
+      transform: translateX(-100px);
+      transition: opacity 1.2s ease-in-out 0.5s, transform 1s ease-in-out 0.5s;
+    }
+
+    .wipe.revealed .wipe-content {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* Fade específico para h1 */
+    h3 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      opacity: 0;
+      transform: translateX(100px); /* Viene desde la derecha */
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    h3.revealed {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .wipe.revealed h3 {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+
+</head>
+
+<body class="gallery-single-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename"><img src="assets/img/logo.png" class="img-fluid" alt=""></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Inicio<br></a></li>
+          <li><a href="about.html">Sobre mí</a></li>
+          <li><a href="portfolio.html" class="active"><span>Portafolio</span></a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Gallery Details Section -->
+    <div id="gallery-details" class="gallery-details section">
+
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/Chopo/1-slider-project-chopo.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/Chopo/2-slider-project-chopo.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/Chopo/3-slider-project-chopo.png" alt="">
+            </div>
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    </div><!-- /Gallery Details Section -->
+
+    <section id="sec1" class="wipe">
+      <div class="container wipe-content">
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-up">
+            <img class="introduction-image" src="assets/img/portfolio/Common/1-Introduction.png" alt="">
+          </div>
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <h4 class="title-portfolio">Introducción al proyecto</h4>
+              <p class="quote-portfolio">
+                Diseñé una app para representantes médicos que combina geolocalización, agenda y gestión de visitas en una experiencia intuitiva, offline y lista para la realidad del terreno.
+              </p>
+              <p class="body-text-portfolio ">
+                En un contexto donde cada minuto cuenta, los representantes médicos enfrentan retos como rutas cambiantes, cancelaciones y zonas sin conexión. La plataforma actual no respondía a estas necesidades: presentaba errores por conectividad, era lenta y no contemplaba el trabajo en campo. Esto generaba frustración, pérdida de tiempo y una experiencia fragmentada.
+              </p>
+              <p class="body-text-portfolio ">
+                Este proyecto fue más que un rediseño visual. Se trató de crear una app móvil robusta, intuitiva y resiliente, capaz de funcionar online y offline, adaptada al ritmo de quienes están en movimiento. Con un enfoque centrado en el usuario, pusimos empatía, tecnología y diseño estratégico al servicio de su productividad diaria.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec2" class="wipe">
+      <div class="container wipe-content">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info">
+              <h4 class="title-portfolio">Información del proyecto</h4>
+              <div class="row">
+                <div class="col-lg-4">
+                  <ul class="project-information">
+                    <li><strong>Cliente</strong> Laboratorios El Chopo</li>
+                    <li><strong>Tipo de proyecto</strong> App iPad </li>
+                    <li><strong>Sector</strong> Salud | Geolocalización </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4">
+                  <ul class="project-information">
+                    <li><strong>Rol</strong> UX / UI Designer</li>
+                    <li><strong>Herramientas</strong> Figma</li>
+                    <li><strong>Fecha y duración</strong> Junio - Septiembre 2024 </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4">
+                  <ul class="project-information">
+                    <li><strong>Equipo</strong> 1 Diseñador | 1 PM | 5 desarrolladores </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up">
+            <img class="introduction-image" src="assets/img/portfolio/Common/2-Information.png" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="sec3" class="wipe">
+      <div class="container wipe-content">
+        <h4 class="title-portfolio">Mi papel e impacto</h4>
+        <div class="row my-role">
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="my-role-image float-start" src="assets/img/portfolio/Common/3-IconReserch.png" alt="">
+          </div>
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <p class="title-2-portfolio">
+                Investigación
+              </p>
+              <p class="body-text-portfolio ">
+                Diseñé y conduje entrevistas con representantes médicos para entender sus retos reales: falta de conectividad, cambios imprevistos y herramientas dispersas. A partir de los hallazgos, desarrollé personas, mapas de empatía y definí funcionalidades clave como modo offline y rutas optimizadas.
+              </p>
+              <p class="quote-portfolio">
+                <strong>Impacto:</strong> Convertí necesidades del usuario en requerimientos claros, alineando diseño y negocio con el contexto real del trabajo en campo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row my-role mb-5">
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="my-role-image float-start" src="assets/img/portfolio/Common/3-IconDesign.png" alt="">
+          </div>
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <p class="title-2-portfolio">
+                Diseño
+              </p>
+              <p class="body-text-portfolio ">
+                Elaboré la arquitectura de información, flujos de usuario y prototipos interactivos en Figma. Priorizando claridad y eficiencia, diseñé una experiencia fluida que integró geolocalización, agenda y check-in.
+              </p>
+              <p class="quote-portfolio">
+                <strong>Impacto:</strong> El diseño redujo tiempos de gestión en un 75% y aumentó la productividad diaria de los usuarios en un 25%.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row my-role">
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="my-role-image float-start" src="assets/img/portfolio/Common/3-IconComunication.png" alt="">
+          </div>
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <p class="title-2-portfolio">
+                Comunicación
+              </p>
+              <p class="body-text-portfolio ">
+                Fui puente entre diseño, desarrollo y negocio. Documenté decisiones de diseño, facilité sesiones de alineación y comuniqué el valor del enfoque centrado en el usuario.
+              </p>
+              <p class="quote-portfolio">
+                <strong>Impacto:</strong> Fortalecí la colaboración entre equipos y posicioné el diseño como un motor estratégico dentro del proyecto.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec4" class="wipe">
+      <div class="container wipe-content">
+        <div class="row">
+          <h4 class="title-portfolio">Problema</h4>
+          <div class="col-lg-6 padding-nule" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <h4 class="subtitle-portfolio">La experiencia no estaba a la altura del contexto.</h4>
+              <p class="body-text-portfolio ">
+                La plataforma web existente era lenta, poco intuitiva y dependía completamente de la conexión a internet, lo que generaba errores frecuentes y frustración en campo. Los representantes médicos perdían tiempo valioso por rutas mal optimizadas, agendas poco flexibles y una interfaz que no respondía a sus necesidades reales.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up">
+            <img class="introduction-image" src="assets/img/portfolio/Common/4-Problem.png" alt="">
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-4 padding-nule" data-aos="fade-up" data-aos-delay="100">
+            <div class="problem-section">
+              <h4 class="subtitle-portfolio">60% de los usuarios </h4>
+              <p class="body-text-portfolio ">
+                mencionaron la <strong>necesidad urgente de funcionalidad offline</strong> debido a fallas frecuentes por mala conectividad en campo.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 padding-nule" data-aos="fade-up" data-aos-delay="100">
+            <div class="problem-section">
+              <h4 class="subtitle-portfolio">75% del tiempo de gestión de citas  </h4>
+              <p class="body-text-portfolio">
+                se invertía en tareas manuales o procesos poco eficientes, como reorganizar rutas o reagendar visitas.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 padding-nule" data-aos="fade-up" data-aos-delay="100">
+            <div class="problem-section">
+              <h4 class="subtitle-portfolio">Más del 30% de los usuarios</h4>
+              <p class="body-text-portfolio ">
+                reportaron <strong>dificultades con la interfaz, </strong> especialmente al interpretar iconos o acceder rápidamente a funciones clave.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="sec5" class="wipe">
+      <div class="container wipe-content">
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <h4 class="title-portfolio">Metodología</h4>
+            <img class="methodology-image" src="assets/img/portfolio/Common/5-DesignThinking.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec6" class="wipe">
+      <div class="container wipe-content">
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <h4 class="title-challenge">Desafío</h4>
+            <p class="body-text-challenge ">
+              Diseñar una app móvil funcional, intuitiva y resiliente que se adapte a las condiciones reales del trabajo en campo de los representantes médicos, operando de forma eficiente tanto online como offline.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec7" class="wipe">
+      <div class="container wipe-content">
+        <h4 class="title-portfolio">Empatizar</h4>
+        <div class="row empathize">
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="empathize-image float-start" src="assets/img/portfolio/Common/6-empathize.png" alt="">
+          </div>
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <p class="subtitle-portfolio ">
+                Escuchar antes de diseñar
+              </p>
+              <p class="body-text-portfolio ">
+                Me sumergí en el mundo de los representantes médicos. Hice entrevistas profundas con perfiles diversos: desde novatos hasta expertos con más de 10 años de experiencia. Descubrí lo siguiente:
+              </p>
+              <div class="body-list-portfolio">
+                <ul>
+                  <li>Perder tiempo en rutas mal planeadas era su día a día.</li>
+                  <li>Las cancelaciones de último minuto les causaban estrés y desorganización.</li>
+                  <li>La falta de conexión los dejaba sin acceso a datos clave.</li>
+                  <li>Usaban múltiples apps que no hablaban entre sí: mapas, agendas, CRM.</li>
+                </ul>
+              </div>
+              <p class="quote-portfolio">
+                <strong>Insight clave:</strong> No necesitan una app bonita. Necesitan una herramienta que funcione donde y cuando más la necesitan.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row empathize">
+          <div class="col-lg-12" data-aos="fade-up">
+            <img class="empathize-artifact float-start" src="assets/img/portfolio/Chopo/Empathize-artifact.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec8" class="wipe">
+      <div class="container wipe-content">
+        <h4 class="title-portfolio">Definir</h4>
+        <div class="row define">
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <p class="subtitle-portfolio ">
+                El problema real no era técnico: era de contexto.
+              </p>
+              <p class="quote-portfolio">
+                ¿Cómo podríamos diseñar una app móvil que les permita gestionar sus visitas, rutas y médicos, incluso sin conexión a internet, de forma eficiente, simple y en tiempo real?
+              </p>
+              <p class="body-text-portfolio ">
+                Necesitábamos una solución que operara en modo offline, integrara agenda + geolocalización + check-in, y se adaptara a distintos niveles de experiencia y dispositivos.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="define-image float-start" src="assets/img/portfolio/Common/7-define.png" alt="">
+          </div>
+        </div>
+        <div class="row define">
+          <div class="col-lg-12" data-aos="fade-up">
+            <img class="define-artifact float-start" src="assets/img/portfolio/Chopo/Define-artifact.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec9" class="wipe">
+      <div class="container wipe-content">
+        <h4 class="title-portfolio">Idear</h4>
+        <div class="row ideate">
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="ideate-image float-start" src="assets/img/portfolio/Common/9-ideate.png" alt="">
+          </div>
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <p class="subtitle-portfolio ">
+                Diseñar más que pantallas: diseñar decisiones
+              </p>
+              <p class="body-text-portfolio ">
+                Diseñé flujos para:
+              </p>
+              <div class="body-list-portfolio">
+                <ul>
+                  <li>Agenda: </li>
+                  <ul>
+                    <li>Agendar, modificar y cancelar visitas fácilmente.</li>
+                    <li>Reprogramar citas con base en la ubicación y disponibilidad actual.</li>
+                  </ul>
+                  <li>Geolocalización: </li>
+                  <ul>
+                    <li>Ver rutas optimizadas y ubicación de médicos en tiempo real.</li>
+                    <li>Hacer check-in y cerrar visitas, incluso sin conexión.</li>
+                  </ul>
+                </ul>
+              </div>
+              <p class="body-text-portfolio">
+                Todo con una lógica centrada en eficiencia, accesibilidad y bajo nivel de fricción.
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="row ideate">
+          <div class="col-lg-12" data-aos="fade-up">
+            <img class="empathize-artifact float-start" src="assets/img/portfolio/Chopo/Ideate-artifact.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec10" class="wipe">
+      <div class="container wipe-content">
+        <h4 class="title-portfolio">Prototipar</h4>
+        <div class="row prototype">
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <p class="subtitle-portfolio ">
+                Diseño intencional, visual claro, interacción sin estrés
+              </p>
+              <p class="body-text-portfolio">
+                Usando Figma, diseñé prototipos de alta fidelidad que validarón las ideas principales:
+              </p>
+              <div class="body-list-portfolio">
+                <ul>
+                  <li>Navegación simple y lógica.</li>
+                  <li>Iconografía clara y accesible.</li>
+                  <li>Calendario y mapa como ejes principales de la experiencia.</li>
+                </ul>
+              </div>
+              <p class="body-text-portfolio">
+                Me aseguré de que cada componente fuera funcional tanto para iOS como Android, adaptándose al contexto móvil y de movilidad.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="prototype-image float-start" src="assets/img/portfolio/Common/10-prototype.png" alt="">
+          </div>
+        </div>
+        <div class="row prototype">
+          <div class="col-lg-12" data-aos="fade-up">
+            <img class="prototype-artifact float-start" src="assets/img/portfolio/Chopo/Prototype-artifact.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec11" class="wipe">
+      <div class="container wipe-content">
+        <h4 class="title-portfolio">Probar</h4>
+        <div class="row test">
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="test-image float-start" src="assets/img/portfolio/Common/11-test.png" alt="">
+          </div>
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="introduction-project">
+              <p class="subtitle-portfolio ">
+                Aprender rápido, iterar mejor
+              </p>
+              <p class="body-text-portfolio ">
+                Probé los prototipos con usuarios reales. Algunos hallazgos clave:
+              </p>
+              <div class="body-list-portfolio">
+                <ul>
+                  <li>90% valoró tener todo en una sola app.</li>
+                  <li>60% pidió mejoras en modo offline: ajustamos la persistencia local.</li>
+                  <li>75% consideró la interfaz intuitiva, aunque ajustamos accesibilidad de iconos.</li>
+                </ul>
+              </div>
+              <p class="body-text-portfolio">
+                Cada iteración fue una oportunidad para refinar la experiencia, reducir la carga cognitiva y aumentar la confianza de uso.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec12" class="wipe">
+      <div class="container wipe-content">
+        <h4 class="title-portfolio">Resultados e impacto</h4>
+        <div class="row results">
+
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="methodology-image" src="assets/img/portfolio/Common/12-results-1.png" alt="">
+            <p class="subtitle-results"> -75%</p>
+            <p class="body-text-results">
+              en tiempo para gestionar citas.
+            </p>
+          </div>
+
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="methodology-image" src="assets/img/portfolio/Common/12-results-2.png" alt="">
+            <p class="subtitle-results"> -30%</p>
+            <p class="body-text-results">
+              en tiempos de traslado.
+            </p>
+          </div>
+
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="methodology-image" src="assets/img/portfolio/Common/12-results-3.png" alt="">
+            <p class="subtitle-results"> +25%</p>
+            <p class="body-text-results">
+              en productividad.
+            </p>
+          </div>
+
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="methodology-image" src="assets/img/portfolio/Common/12-results-1.png" alt="">
+            <p class="subtitle-results"> -20%</p>
+            <p class="body-text-results">
+              en cancelaciones de citas.
+            </p>
+          </div>
+
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="methodology-image" src="assets/img/portfolio/Common/12-results-4.png" alt="">
+            <p class="subtitle-results"> 100%</p>
+            <p class="body-text-results">
+              App funcional offline y online.
+            </p>
+          </div>
+
+          <div class="col-lg-2" data-aos="fade-up">
+            <img class="methodology-image" src="assets/img/portfolio/Common/12-results-5.png" alt="">
+            <p class="subtitle-results"> 90%</p>
+            <p class="body-text-results">
+              de satisfacción tras pruebas de uso.
+            </p>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-lg-12 mt-5" data-aos="fade-up">
+            <p class="subtitle-portfolio "> 
+              Reflexión final
+            </p>
+            <p class="body-text-portfolio">
+              El proyecto logró con éxito sus objetivos de mejorar la eficiencia y productividad de los representantes médicos al proporcionar una solución que integra la gestión de citas con la optimización de rutas en tiempo real. Las métricas de éxito, incluyendo la reducción de tiempos, aumento de la productividad, y la satisfacción del usuario, son indicadores claros de que la app ha cumplido con las expectativas del diseño y las necesidades del usuario. Esto confirma el valor del enfoque centrado en el usuario, demostrando que la app es una herramienta clave para facilitar la vida laboral de los representantes médicos.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+      <!-- Secciones -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="info-wrap mt-2" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="info-item d-flex align-items-center">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Correo electrónico</h3>
+                <p>raudamet@gmail.com </p>
+              </div>
+            </div>
+          </div><!-- End Info Item --> 
+  
+          <div class="col-lg-4">
+            <div class="info-item d-flex align-items-center">
+              <i class="bi bi-behance flex-shrink-0"></i>
+              <div>
+                <h3>Behance</h3>
+                <ins>
+                  <a href="https://www.behance.net/MetzliRauda" target="_blank"><p>/MetzliRauda</p></a>
+                </ins>
+              </div>
+            </div>
+          </div><!-- End Info Item --> 
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex align-items-center">
+              <i class="bi bi-linkedin flex-shrink-0"></i>
+              <div>
+                <h3>Linkedin</h3>
+                <ins>                
+                  <a href="https://www.linkedin.com/in/metzlirauda/" target="_blank"><p>/metzlirauda</p></a>
+                </ins>
+              </div>
+            </div>
+          </div><!-- End Info Item -->   
+        </div>
+      </div>
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Metzli Rauda</strong>2025 <span>Todos los derechos reservados </span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- JS scroll trigger -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.wipe').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+
+</html>
